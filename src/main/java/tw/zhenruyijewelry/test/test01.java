@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class test01 {
 	@RequestMapping(path="/hello.controller",method = RequestMethod.GET)
-//	@ResponseBody
+	@ResponseBody
 	public String hello() {
-		return "hi 87";
+		return "hi";
 	}
 }

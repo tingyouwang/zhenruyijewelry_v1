@@ -25,6 +25,8 @@ public class ProductList {
 	private String img;
 	@Column(name="productname")
 	private String productName;
+//	@Column(name="imgpath")
+//	private String imgpath;
 	
 	public int getId() {
 		return id;
@@ -62,6 +64,7 @@ public class ProductList {
 	public void setTypechinses(String typechinses) {
 		this.typechinses = typechinses;
 	}
+
 	
 	
 }
