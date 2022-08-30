@@ -9,50 +9,26 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-@Entity @Table(name="productlist")
+@Entity
+@Table(name="producttype")
 @Component
-public class ProductList {
+public class ProductType {
 	@Id @Column(name="id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name="material")
 	private String material;
-	@Column(name="material_chinese")
-	private String materialChinese;
 	@Column(name="type")
 	private String type;
 	@Column(name="typechinses")
 	private String typechinses;
-	@Column(name="img")
-	private String img;
-	@Column(name="productname")
-	private String productName;
-//	@Column(name="imgpath")
-//	private String imgpath;
-	
+	@Column(name="materialchinese")
+	private String materialchinese;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
-	public String getImg() {
-		return img;
-	}
-	public void setImg(String img) {
-		this.img = img;
-	}
-	public String getProductName() {
-		return productName;
-	}
-	public void setProductName(String productName) {
-		this.productName = productName;
 	}
 	public String getMaterial() {
 		return material;
@@ -60,19 +36,23 @@ public class ProductList {
 	public void setMaterial(String material) {
 		this.material = material;
 	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
 	public String getTypechinses() {
 		return typechinses;
 	}
 	public void setTypechinses(String typechinses) {
 		this.typechinses = typechinses;
 	}
-	public String getMaterialChinese() {
-		return materialChinese;
+	public String getMaterialchinese() {
+		return materialchinese;
 	}
-	public void setMaterialChinese(String materialChinese) {
-		this.materialChinese = materialChinese;
+	public void setMaterialchinese(String materialchinese) {
+		this.materialchinese = materialchinese;
 	}
-
-	
 	
 }

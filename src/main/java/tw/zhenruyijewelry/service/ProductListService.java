@@ -24,13 +24,18 @@ public class ProductListService {
 		
 		for (var product : allProductlist) {
 			JSONObject json = new JSONObject();
-			json.put("productName", product.getProductName());
-			json.put("img", product.getImg());
+			json.put("category", product.getMaterialChinese());
+			json.put("type", product.getType());
+			
+			JSONObject json2 = new JSONObject();
+			json2.put("imgName", product.getImg());
+			
+			json.put("productList", json2);
+
 			result.add(json);
 		}
 		
 		return result;
 	}
 
-	
 }
