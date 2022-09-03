@@ -21,15 +21,19 @@ public class ProductList {
 	private String materialChinese;
 	@Column(name="type")
 	private String type;
-	@Column(name="typechinses")
-	private String typechinses;
+	@Column(name="type_name")
+	private String typeName;
 	@Column(name="img")
 	private String img;
-	@Column(name="productname")
-	private String productName;
-//	@Column(name="imgpath")
-//	private String imgpath;
+
+
 	
+	public String getTypeName() {
+		return typeName;
+	}
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
 	public int getId() {
 		return id;
 	}
@@ -48,23 +52,12 @@ public class ProductList {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	public String getProductName() {
-		return productName;
-	}
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
+
 	public String getMaterial() {
 		return material;
 	}
 	public void setMaterial(String material) {
 		this.material = material;
-	}
-	public String getTypechinses() {
-		return typechinses;
-	}
-	public void setTypechinses(String typechinses) {
-		this.typechinses = typechinses;
 	}
 	public String getMaterialChinese() {
 		return materialChinese;
