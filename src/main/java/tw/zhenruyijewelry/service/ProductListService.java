@@ -26,6 +26,7 @@ public class ProductListService {
 			JSONObject json = new JSONObject();
 			json.put("category", product.getMaterialChinese());
 			json.put("type", product.getType());
+			json.put("typeName", product.getTypeName());
 			
 			JSONObject json2 = new JSONObject();
 			json2.put("imgName", product.getImg());
